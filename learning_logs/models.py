@@ -16,7 +16,7 @@ class Entry(models.Model):
     text = models.TextField()
     date_added = models.DateTimeField(auto_now_add=True)
 
-    # TODO: 打错变量名会出现错误
+    # TODO: 打错变量名会出现错误, 这个字段的用处
     class Meta:
         verbose_name_plural = 'entries'
 

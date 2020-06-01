@@ -18,3 +18,5 @@ Learn Python book demo
 
 - path 和 url 的区别，哪个版本更改的
 - urls namespace 参数无法加入
+- django reverse 函数位置修改
+- 内嵌类 Meta 的作用
