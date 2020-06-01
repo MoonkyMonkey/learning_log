@@ -18,6 +18,7 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    # 书中代码出错  url(r'', include('learning_logs.urls'), namespace='learning_logs'),
-    url(r'', include('learning_logs.urls')),
+    # 原书中代码 url(r'', include('learning_logs.urls', namespace='learning_logs')),
+    # 实际代码中需要由 app_name 组成的元组
+    url(r'', include(('learning_logs.urls', 'urls'), namespace='learning_logs')),
 ]
