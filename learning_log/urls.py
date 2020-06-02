@@ -24,5 +24,5 @@ urlpatterns = [
     # learnings_logs
     url(r'', include(('learning_logs.urls', 'urls'), namespace='learning_logs')),
     # users
-    url(r'^user/', include(('users.urls', 'urls'), namespace='users')),
+    url(r'^users/', include(('users.urls', 'urls'), namespace='users')),
 ]

@@ -14,6 +14,7 @@ Learn Python book demo
 2. 对 app 调用 makemigrations
 3. 调用 migrate
 
+- flush 重建数据库（会丢失所有数据）
 ### 创建 app
 1. python manage.py startapp xxx
 2. 在 settings 中加入 app
