@@ -14,6 +14,10 @@ Learn Python book demo
 2. 对 app 调用 makemigrations
 3. 调用 migrate
 
+### 创建 app
+1. python manage.py startapp xxx
+2. 在 settings 中加入 app
+
 #### problem 
 
 - path 和 url 的区别，哪个版本更改的

@@ -13,5 +13,6 @@ class EntryForm(forms.ModelForm):
         model = Entry
         fields = ['text']
         labels = {'text': ''}
+        # 设置输入文本宽度为 80 列 默认 40
         widgets = {'text': forms.Textarea(attrs={'cols':80})}
 
