@@ -25,7 +25,7 @@ SECRET_KEY = '-&b%mgt-uusakm)qnu-med$et(_2ky3xci5c)3@fj)#=j&v)3i'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['learning-log-winn.herokuapp.com']
 
 
 # Application definition
@@ -137,20 +137,20 @@ BOOTSTRAP3 = {
 
 # Heroku 设置
 if os.getcwd() == '/app':
-import dj_database_url
-DATABASES = {
-    'default': dj_database_url.config(default='postgres://localhost')
-}
+    import dj_database_url
+    DATABASES = {
+        'default': dj_database_url.config(default='postgres://localhost')
+    }
 
-# 让 request.is_secure() 承认 X-Forwarded-Proto 头
-SECRET_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+    # 让 request.is_secure() 承认 X-Forwarded-Proto 头
+    SECRET_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-# 支持所有的主机头 （host header）
-ALLOWED_HOSTS = ['*']
+    # 支持所有的主机头 （host header）
+    ALLOWED_HOSTS = ['*']
 
-# 静态资源配置
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-STATIC_ROOT = os.path.join(BASE_DIR, 'static') 
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
+    # 静态资源配置
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static') 
+    STATICFILES_DIRS = (
+        os.path.join(BASE_DIR, 'static'),
+    )
