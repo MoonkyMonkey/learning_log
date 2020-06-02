@@ -25,3 +25,4 @@ Learn Python book demo
 - urls namespace 参数无法加入
 - django reverse 函数位置修改
 - 内嵌类 Meta 的作用
+- entry 页面显示问题

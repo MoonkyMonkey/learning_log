@@ -8,7 +8,6 @@
     <a href="{% url 'learning_logs:new_entry' topic.id %}">add new entry</a>
   </p>
   {% for entry in entries %}
-
   <div class="panel panel-default">
       <div class="panel-heading">
         {% comment %} 不能在 date: 后面加上空格 {% endcomment %}
@@ -22,7 +21,6 @@
         {{ entry.text | linebreaks }}
       </div>
   </div><!-- panel -->
-  
   {% empty %}
     There are no entries for this topic yet.
   {% endfor %}
