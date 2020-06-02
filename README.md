@@ -19,6 +19,8 @@ Learn Python book demo
 1. python manage.py startapp xxx
 2. 在 settings 中加入 app
 
+### 部署
+heroku config:set DISABLE_COLLECTSTATIC=1
 #### problem 
 
 - path 和 url 的区别，哪个版本更改的
