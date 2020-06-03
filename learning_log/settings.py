@@ -23,10 +23,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '-&b%mgt-uusakm)qnu-med$et(_2ky3xci5c)3@fj)#=j&v)3i'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['learning-log-winn.herokuapp.com']
 
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -146,7 +146,8 @@ if os.getcwd() == '/app':
     SECRET_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
     # 支持所有的主机头 （host header）
-    ALLOWED_HOSTS = ['*']
+    DEBUG = False
+    ALLOWED_HOSTS = ['learning-log-winn.herokuapp.com']
 
     # 静态资源配置
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))

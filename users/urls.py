@@ -1,7 +1,7 @@
 from django.conf.urls import url
 # 书中的代码
 # from django.contrib.auth.views import login
-from django.contrib.auth.views import LoginView, LogoutView
+from django.contrib.auth.views import LoginView
 
 from . import views
 

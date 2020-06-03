@@ -16,10 +16,8 @@ def register(request):
     """ 用户注册 """
     if request.method != 'POST':
         # 显示空的注册表单
-        print("yes")
         form = UserCreationForm()
     else:
-        print("no")
         # 处理填写好的表单
         form = UserCreationForm(data=request.POST)
         if form.is_valid():
